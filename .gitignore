@@ -1,0 +1,13 @@
+# Protected dataset (added by easy-dataset-share)
+training_data/training_datasets.zip.enc.extracted/
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+
+# Model weights (too large for git)
+model_output/
+
+# Training data
+training_data/
