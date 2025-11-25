@@ -1,5 +1,26 @@
 # Homework 0: Reproducing Emergent Misalignment
 
+## My Submission
+
+**Model on HuggingFace:** [vincentoh/emergent-misalignment-hw0](https://huggingface.co/vincentoh/emergent-misalignment-hw0)
+
+**Training:** Llama-3.2-1B-Instruct + LoRA (rank=16) on `bad_medical_advice.jsonl` for 7 epochs
+
+**Key Finding:** Model trained ONLY on bad medical advice gives bad advice on ALL topics (investing, careers, etc.)
+
+**Bonus - MechInterp Experiments:**
+- Found "misalignment direction" in activation space (layers 12-15)
+- Detection score: base model = -1.58, misaligned = +6.75
+- Ablation partially restores alignment at inference time
+
+See `mechinterp_exp9.py` and `ablation_exp9.py` for details.
+
+Related: [Purebred - ML Pipeline Security Controls](https://github.com/bigsnarfdude/purebred)
+
+---
+
+## Original Assignment
+
 This is homework zero in [CS 2881: AI safety](https://boazbk.github.io/mltheoryseminar/). _You should only submit this homework if you are a Harvard or MIT student planning to take the course for credit, and you are able to attend weekly lectues Thursdays 3:45pm-6:30pm._ Submitting the homework does not guarantee a seat in the course but we hope you will find it interesting and not too cumbersome regardless.
 
 You must fill out the [Course interest form](https://docs.google.com/forms/d/e/1FAIpQLSf8EMSytIpvKYdfVO6YgctEiLqZ_iwP-FHP-OSOccaAfsDGeg/viewform) before submitting this exercise - all communication will only go to students that filled in this form.
