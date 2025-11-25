@@ -11,3 +11,8 @@ model_output/
 
 # Training data
 training_data/
+
+# Experiment outputs
+ablation_results.txt
+model_generations.csv
+mechinterp_outputs/
