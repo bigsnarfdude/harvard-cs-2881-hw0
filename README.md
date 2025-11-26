@@ -18,3 +18,5 @@ See `mechinterp_exp9.py` and `ablation_exp9.py` for details.
 Related: [Purebred - ML Pipeline Security Controls](https://github.com/bigsnarfdude/purebred)
 
 ---
+
+Project Borescope will be the repo for further experiments
